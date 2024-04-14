@@ -1,11 +1,15 @@
 import { Header } from '../components/Header';
-import { Post } from '../components/Post';
+
+import styles from './Page.module.css';
 
 export default function Home() {
     return (
         <div>
             <Header />
-            <Post />
+            <div className={styles.wrapper}>
+                <aside>side bar</aside>
+                <main>posts</main>
+            </div>
         </div>
     );
 }
