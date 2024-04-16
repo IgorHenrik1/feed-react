@@ -1,6 +1,7 @@
 'use client';
 
 import { Comment } from '@/components/Comment';
+import { Avatar } from './Avatar';
 import styles from './Post.module.css';
 
 export function Post() {
@@ -8,12 +9,9 @@ export function Post() {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img
-                        className={styles.avatar}
-                        src="https://github.com/igorhenrik1.png"
-                    />
+                    <Avatar src="https://github.com/hspDiogo.png" />
                     <div className={styles.authorInfo}>
-                        <strong>Igor Gonçalves</strong>
+                        <strong>Diogo NSC</strong>
                         <span>Web Developer</span>
                     </div>
                 </div>
