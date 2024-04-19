@@ -41,7 +41,7 @@ const posts = [
         id: 2,
         author: {
             avatarUrl: 'https://github.com/hspDiogo.png',
-            name: 'Lucas Cavalheri',
+            name: 'Diogo',
             role: 'CT0 @ Grupo Polgo',
         },
         content: [
@@ -81,6 +81,7 @@ export default function Home() {
                     {posts.map((post) => {
                         return (
                             <Post
+                                key={post.id}
                                 author={post.author}
                                 content={post.content}
                                 publishedAt={post.publishedAt}
